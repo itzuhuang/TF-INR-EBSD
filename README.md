@@ -31,7 +31,7 @@ We use SIREN to reconstruct Kikuchi patterns, then take the gradient of the reco
 
 But the author is wondering: if we could take the divergence of the gradient of our own life history, what would we get? It is kind of an interesting question.
 
-If you run the code from `01` to `04`, you will find a story from by this video:
+If you run the code from `01` to `04`, you will find a story from this video:
 
 https://youtu.be/QZigkM0-6QE?si=RlFmnHv5NfJH4b3H
 
