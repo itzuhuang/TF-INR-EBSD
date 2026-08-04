@@ -45,6 +45,7 @@ def compute_profile(model, Ny, Nx):
         J = vmap(jacobian_at_one_point)(xy_b)
         S_b = torch.sqrt(torch.sum(J.square(), dim=(1, 2)))
         profile_flat[start:end] = S_b.detach().cpu().numpy().astype(np.float32)
+        
         if (start // AUTOGRAD_BATCH) % 500 == 0:
             print(f"{end}/{Npts} ({time.time()-t0:.1f}s)")
         del J, S_b
