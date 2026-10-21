@@ -126,7 +126,7 @@ for cfg in SMAP_DATASETS:
     Hp = ck["Hp"]
     Wp = ck["Wp"]
     print(f"loaded: Ny={Ny} Nx={Nx} Hp={Hp} Wp={Wp} R={model.R}")
-    print(f"\n[{label}] Computing automatic gradient ...")
+    print(f"\n[{label}] Computing gradient ...")
 
     profile = compute_profile(model, Ny, Nx)
     npy_path = Path(PROFILE_OUT_DIR) / f"{label}_profile.npy"
